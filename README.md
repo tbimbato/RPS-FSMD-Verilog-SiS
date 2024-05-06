@@ -25,3 +25,9 @@ Benvenuto nella repository del progetto del corso di Architettura degli Elaborat
 ### Contatti e Collaborazioni
 
 Per domande, suggerimenti o collaborazioni, sentiti libero di contattarci attraverso la sezione "Issues" della repository.
+
+### Copyright e Citazione
+
+Il codice sorgente e la documentazione all'interno di questa repository sono soggetti a copyright © [2024] [Tommi Bimbato, Antonio Iovine].
+
+È concesso il permesso di utilizzare, modificare e distribuire questo software a condizione che venga mantenuto il riferimento al proprietario originale della repository e che venga citata adeguatamente la fonte nei lavori derivati o nelle pubblicazioni accademiche.
