@@ -1,5 +1,13 @@
 # README
 
+# Morra Cinese — FSMD in Verilog and SiS
+
+Hardware implementation of a Finite State Machine with Datapath (FSMD) 
+for the Rock-Paper-Scissors game. Written in Verilog (SystemVerilog) 
+and SiS (gate-level BLIF). Includes testbench and full gate-level design.
+
+Course project — Computer Architecture, University of Verona (2024).
+
 ## Architettura degli Elaboratori - Progetto Morra Cinese FSMD
 
 Benvenuto nella repository del progetto del corso di Architettura degli Elaboratori, svolto durante il corso di Informatica presso l'Università di Verona (UniVR). Questo progetto è incentrato sulla realizzazione di un sistema FSMD per il gioco della Morra Cinese. All'interno di questa repository, troverai i codici sorgenti scritti in linguaggio hardware Verilog e SiS (blif), insieme a tutti i moduli .blif relativi alla progettazione a gate level in SiS.
