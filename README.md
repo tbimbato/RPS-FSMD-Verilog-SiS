@@ -1,41 +1,27 @@
-# README
+# RPS-FSMD-Verilog-SiS
 
-# Morra Cinese — FSMD in Verilog and SiS
+Hardware implementation of a **Finite State Machine with Datapath (FSMD)** 
+for the Rock-Paper-Scissors game, developed as part of the Computer 
+Architecture course at the University of Verona (2024).
 
-Hardware implementation of a Finite State Machine with Datapath (FSMD) 
-for the Rock-Paper-Scissors game. Written in Verilog (SystemVerilog) 
-and SiS (gate-level BLIF). Includes testbench and full gate-level design.
+## Implementation
 
-Course project — Computer Architecture, University of Verona (2024).
+- **RTL level**: SystemVerilog (`design.sv`) with full testbench (`testbench.sv`)
+- **Gate level**: SiS synthesis from BLIF description (`SRC/sis/`)
+- Both optimized and non-optimized gate-level netlists included
 
-## Architettura degli Elaboratori - Progetto Morra Cinese FSMD
+## Repository Structure
 
-Benvenuto nella repository del progetto del corso di Architettura degli Elaboratori, svolto durante il corso di Informatica presso l'Università di Verona (UniVR). Questo progetto è incentrato sulla realizzazione di un sistema FSMD per il gioco della Morra Cinese. All'interno di questa repository, troverai i codici sorgenti scritti in linguaggio hardware Verilog e SiS (blif), insieme a tutti i moduli .blif relativi alla progettazione a gate level in SiS.
+| File/Folder | Description |
+|---|---|
+| `design.sv` | FSMD RTL description in SystemVerilog |
+| `testbench.sv` | Simulation testbench |
+| `SRC/sis/` | Gate-level BLIF modules (SiS) |
+| `SRC/*.pdf` | Project report |
 
-### Struttura della Repository
+## How to Run
 
-1. **`design.sv`**: Questo file contiene la descrizione in linguaggio hardware Verilog del sistema FSMD per il gioco della Morra Cinese.
-
-2. **`testbench.sv`**: Il testbench per la verifica del sistema FSMD.
-
-3. **Moduli `.blif`**: I moduli .blif relativi alla progettazione a gate level in SiS si trovano nella cartella `SRC/sis/non_ottimizzato`.
-
-4. **Relazione**: Troverai la relazione in formato PDF all'interno della cartella `SRC`.
-
-### Istruzioni per l'Esecuzione
-
-1. Assicurati di avere un ambiente di sviluppo Verilog/SiS configurato.
-
-2. Esegui il file `design.sv` per sintetizzare il sistema FSMD.
-
-3. Utilizza il file `testbench.sv` per eseguire test approfonditi e verificare il corretto funzionamento del sistema.
-
-### Contatti e Collaborazioni
-
-Per domande, suggerimenti o collaborazioni, sentiti libero di contattarci attraverso la sezione "Issues" della repository.
-
-### Copyright e Citazione
-
-Il codice sorgente e la documentazione all'interno di questa repository sono soggetti a copyright © [2024] [Tommi Bimbato, Antonio Iovine].
-
-È concesso il permesso di utilizzare, modificare e distribuire questo software a condizione che venga mantenuto il riferimento al proprietario originale della repository e che venga citata adeguatamente la fonte nei lavori derivati o nelle pubblicazioni accademiche.
+**Verilog simulation:**
+```bash
+# Any standard Verilog simulator (e.g. ModelSim, Icarus)
+iverilog -o rps design.sv testbench.sv && vvp rps
