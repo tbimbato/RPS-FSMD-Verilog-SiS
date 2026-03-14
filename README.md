@@ -1,3 +1,4 @@
+
 # RPS-FSMD-Verilog-SiS
 
 Hardware implementation of a **Finite State Machine with Datapath (FSMD)** 
@@ -25,3 +26,13 @@ Architecture course at the University of Verona (2024).
 ```bash
 # Any standard Verilog simulator (e.g. ModelSim, Icarus)
 iverilog -o rps design.sv testbench.sv && vvp rps
+```
+
+**SiS synthesis:**
+```bash
+sis
+read_blif SRC/sis/non_ottimizzato/<module>.blif
+```
+
+## Authors
+Tommi Bimbato, Antonio Iovine — UniVR 2024
